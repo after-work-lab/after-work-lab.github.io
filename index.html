@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>퇴근후랩 After Work Lab</title>
+<meta name="description" content="퇴근후랩(After Work Lab)은 일상의 작은 습관을 돕는 앱을 만드는 1인 개발 스튜디오입니다.">
+<style>
+  :root {
+    --bg: #fff8f3;
+    --card: #ffffff;
+    --text: #1f1a17;
+    --muted: #6b625c;
+    --accent: #ff7a45;
+    --accent2: #ffae5c;
+    --line: #f0e4da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17130f;
+      --card: #221c17;
+      --text: #f5ede6;
+      --muted: #b3a79d;
+      --line: #3a3029;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.7;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  .hero { margin-bottom: 40px; }
+  .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  h1 { font-size: 36px; line-height: 1.3; margin: 16px 0 8px; }
+  h2 { font-size: 20px; margin: 0 0 12px; }
+  .lead { font-size: 18px; color: var(--muted); margin: 0; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .app { padding: 12px 0; border-top: 1px solid var(--line); }
+  .app:first-of-type { border-top: 0; padding-top: 0; }
+  .app strong { font-size: 17px; }
+  .soon { color: var(--muted); font-size: 14px; }
+  ul { margin: 0; padding-left: 20px; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 32px; }
+  @media (max-width: 480px) {
+    h1 { font-size: 28px; }
+    dl { grid-template-columns: 1fr; gap: 0; }
+    dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <span class="badge">After Work Lab</span>
+    <h1>퇴근후랩</h1>
+    <p class="lead">일상의 작은 습관을 돕는 앱을 만듭니다.</p>
+  </div>
+
+  <section>
+    <h2>소개</h2>
+    <p>퇴근후랩은 회사를 다니며 퇴근 후 시간에 앱을 만드는 1인 개발 스튜디오입니다.
+    복잡한 기능보다 매일 쉽게 쓸 수 있는 앱, 가입 없이 바로 쓰고 기록은 내 폰에만 남는 앱을 만듭니다.</p>
+  </section>
+
+  <section>
+    <h2>우리가 만드는 앱</h2>
+    <div class="app">
+      <strong>숏끊 – 숏폼 끊기 카운터</strong><br>
+      쇼츠, 릴스, 틱톡 같은 숏폼 영상을 줄이거나 끊고 싶은 분을 위한 앱입니다.
+      숏폼 없이 보낸 시간을 세고, 되찾은 시간을 보여 주고, 매일 서약과 리뷰로 습관을 이어 가게 돕습니다.
+      Google Play, 원스토어에서 "숏끊"을 검색하세요.
+    </div>
+    <div class="app">
+      <strong>글자 탐정 – 한글 단어 추리 게임</strong> <span class="soon">출시 준비 중</span>
+    </div>
+    <div class="app">
+      <strong>받은만큼 – 축의금·경조사 장부</strong> <span class="soon">출시 준비 중</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>우리가 지키는 것</h2>
+    <ul>
+      <li>회원가입과 로그인 없이 바로 씁니다.</li>
+      <li>사용자의 기록은 기기에만 저장하고 수집하지 않습니다.</li>
+      <li>무료 기능은 앞으로도 무료로 둡니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>사업자 정보</h2>
+    <dl>
+      <dt>상호</dt><dd>퇴근후랩 (After Work Lab)</dd>
+      <dt>대표</dt><dd>이동석</dd>
+      <dt>통신판매업 신고번호</dt><dd>제2026-서울성북-1322호</dd>
+      <dt>이메일</dt><dd><a href="mailto:seoul2co@hanmail.net">seoul2co@hanmail.net</a></dd>
+    </dl>
+  </section>
+
+  <section lang="en">
+    <h2>About After Work Lab</h2>
+    <p>After Work Lab is an independent app studio based in Seoul, Korea.
+    We build simple, privacy-friendly mobile apps that help people build better daily habits.
+    No sign-up required, and user data stays on the device.</p>
+    <dl>
+      <dt>Apps</dt><dd>Shotkkeun (숏끊) – short-form video quit counter<br>Word Detective (글자 탐정) – coming soon<br>Giftbook (받은만큼) – coming soon</dd>
+      <dt>Business name</dt><dd>After Work Lab (퇴근후랩)</dd>
+      <dt>Representative</dt><dd>Dongseok Lee</dd>
+      <dt>D-U-N-S</dt><dd>697128479</dd>
+      <dt>Contact</dt><dd><a href="mailto:seoul2co@hanmail.net">seoul2co@hanmail.net</a></dd>
+    </dl>
+  </section>
+
+  <footer>© 2026 After Work Lab (퇴근후랩)</footer>
+</main>
+</body>
+</html>
